@@ -41,6 +41,7 @@ SELECT COUNT(*) AS `studenti`, YEAR(`enrolment_date`) FROM `students` GROUP BY Y
 
 -- 2. Contare gli insegnanti che hanno l'ufficio nello stesso edificio
 
+SELECT COUNT(*) AS `insegnanti`, `office_address` FROM `teachers` GROUP BY `office_address`; 
 
 -- 3. Calcolare la media dei voti di ogni appello d'esame
 
